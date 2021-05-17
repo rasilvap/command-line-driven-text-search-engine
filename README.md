@@ -27,6 +27,9 @@ algorithm and the basic console functionality (you can assume that the input str
 ## Rank
   
   The rank score must be 100% if a file contains all the words
+  
 ● It must be 0% if it contains none of the words
+
 ● It should be between 0 and 100 if it contains only some of the words, but the exact ranking
+
 formula is up to you to choose and implement
