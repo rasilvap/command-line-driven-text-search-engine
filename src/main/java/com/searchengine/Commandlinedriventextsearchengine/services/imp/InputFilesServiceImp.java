@@ -39,7 +39,7 @@ public class InputFilesServiceImp implements InputFilesService {
         return filesContent;
     }
 
-    public void displayFilesCount(String directory, String filesExtension) throws IOException {
+    public String displayFilesCount(String directory, String filesExtension) throws IOException {
         long filesCount;
         try (var filesPaths = Files.list(Paths.get(directory))) {
             filesCount = filesPaths
@@ -50,6 +50,8 @@ public class InputFilesServiceImp implements InputFilesService {
         if (filesCount == 1) {
             filesText = "file";
         }
-        System.out.println(filesCount + " " + filesText + " read in directory " + directory);
+        String message = filesCount + " " + filesText + " read in directory " + directory;
+        System.out.println(message);
+        return message;
     }
 }

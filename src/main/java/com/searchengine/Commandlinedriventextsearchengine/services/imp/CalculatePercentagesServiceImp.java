@@ -4,7 +4,7 @@ package com.searchengine.Commandlinedriventextsearchengine.services.imp;
 import com.searchengine.Commandlinedriventextsearchengine.model.InputFile;
 import com.searchengine.Commandlinedriventextsearchengine.services.CalculatePercentagesService;
 import com.searchengine.Commandlinedriventextsearchengine.services.RankService;
-import com.searchengine.Commandlinedriventextsearchengine.util.ReadWordsService;
+import com.searchengine.Commandlinedriventextsearchengine.util.ReadUserInputs;
 import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
@@ -15,16 +15,16 @@ import java.util.Map;
 public class CalculatePercentagesServiceImp implements CalculatePercentagesService {
 
 
-    private ReadWordsService readWordsService;
+    private ReadUserInputs readUserInputs;
     private RankService rankService;
 
-    public CalculatePercentagesServiceImp(ReadWordsService readWordsService, RankService rankService) {
-        this.readWordsService = readWordsService;
+    public CalculatePercentagesServiceImp(ReadUserInputs readUserInputs, RankService rankService) {
+        this.readUserInputs = readUserInputs;
         this.rankService = rankService;
     }
 
     public boolean calculatePercentages(Map<String, List<String>> filesContent) {
-        var searchedWords = readWordsService.readSearchedWords();
+        var searchedWords = readUserInputs.readSearchedWords();
         if (searchedWords.size() == 1 && searchedWords.contains("quit")) {
             return true;
         }

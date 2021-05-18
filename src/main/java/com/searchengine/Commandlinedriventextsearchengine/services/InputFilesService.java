@@ -26,5 +26,5 @@ public interface InputFilesService {
      * @param filesExtension Predicat that indicate files extension to consider.
      * @throws IOException If the directory doesn't exist.
      */
-    void displayFilesCount(String directory, String filesExtension) throws IOException;
+    String displayFilesCount(String directory, String filesExtension) throws IOException;
 }

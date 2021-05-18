@@ -1,16 +1,12 @@
 package com.searchengine.Commandlinedriventextsearchengine.util;
 
-
-import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-@Service
-public class ReadWordsService {
+public class ReadUserInputs {
     /**
      * Read all the words typed by user.
      * @return List of words typed by user.
