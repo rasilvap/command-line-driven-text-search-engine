@@ -1,6 +1,7 @@
-package com.searchengine.Commandlinedriventextsearchengine.services.imp;
+package com.searchengine.Commandlinedriventextsearchengine.util;
 
-import search.engine.com.services.ReadWordsService;
+
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +9,8 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ReadWordsServiceImp implements ReadWordsService {
+@Service
+public class ReadWordsService {
     /**
      * Read all the words typed by user.
      * @return List of words typed by user.

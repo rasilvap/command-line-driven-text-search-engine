@@ -2,14 +2,11 @@ package com.searchengine.Commandlinedriventextsearchengine.services;
 
 import com.searchengine.Commandlinedriventextsearchengine.model.InputFile;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
-public class RankService {
+
+public interface RankService {
 
     /**
      * Calculate the file rank.
@@ -18,12 +15,7 @@ public class RankService {
      * @param searchedWords The searched words.
      * @return The rank of the file.
      */
-    public InputFile calculateRank(String fileName, List<String> fileWords, List<String> searchedWords) {
-        var existingWordsInFile = searchedWords.stream().filter(fileWords::contains).collect(Collectors.toList());
-        return new InputFile(fileName,
-                BigDecimal.valueOf(existingWordsInFile.size())
-                        .divide(BigDecimal.valueOf(searchedWords.size()), 4, RoundingMode.HALF_UP));
-    }
+    InputFile calculateRank(String fileName, List<String> fileWords, List<String> searchedWords);
 
     /**
      * Calculate multiple files ranks. For each file, a rank is calculated, but the list is not sorted.
@@ -32,12 +24,5 @@ public class RankService {
      * @param searchedWords The searched words.
      * @return A rank for each file. This list is not sorted.
      */
-    public List<InputFile> calculateRanks(Map<String, List<String>> filesContent, List<String> searchedWords) {
-        List<InputFile> ranks = new ArrayList<>();
-        filesContent.forEach((inputFileName, fileWords) ->
-                ranks.add(calculateRank(inputFileName, fileWords, searchedWords))
-        );
-        return ranks;
-    }
-
+    List<InputFile> calculateRanks(Map<String, List<String>> filesContent, List<String> searchedWords);
 }
