@@ -2,7 +2,6 @@ package com.searchengine.Commandlinedriventextsearchengine.services;
 
 import com.searchengine.Commandlinedriventextsearchengine.model.InputFile;
 import com.searchengine.Commandlinedriventextsearchengine.services.imp.CalculatePercentagesServiceImp;
-import com.searchengine.Commandlinedriventextsearchengine.util.ReadUserInputs;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

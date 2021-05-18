@@ -1,4 +1,7 @@
-package com.searchengine.Commandlinedriventextsearchengine.util;
+package com.searchengine.Commandlinedriventextsearchengine.services.imp;
+
+import com.searchengine.Commandlinedriventextsearchengine.services.ReadUserInputs;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,11 +9,8 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class ReadUserInputs {
-    /**
-     * Read all the words typed by user.
-     * @return List of words typed by user.
-     */
+@Service
+public class ReadUserInputsImp implements ReadUserInputs {
     public List<String> readSearchedWords() {
         List<String> searchedWord = new ArrayList<>();
         System.out.print("search>");

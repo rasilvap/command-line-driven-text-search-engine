@@ -4,7 +4,7 @@ package com.searchengine.Commandlinedriventextsearchengine.services.imp;
 import com.searchengine.Commandlinedriventextsearchengine.model.InputFile;
 import com.searchengine.Commandlinedriventextsearchengine.services.CalculatePercentagesService;
 import com.searchengine.Commandlinedriventextsearchengine.services.RankService;
-import com.searchengine.Commandlinedriventextsearchengine.util.ReadUserInputs;
+import com.searchengine.Commandlinedriventextsearchengine.services.ReadUserInputs;
 import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
