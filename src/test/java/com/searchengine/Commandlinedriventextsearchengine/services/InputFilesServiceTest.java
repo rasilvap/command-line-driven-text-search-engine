@@ -13,9 +13,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.stream.Stream;
-
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
 class InputFilesServiceTest {
@@ -29,7 +26,7 @@ class InputFilesServiceTest {
         inputFilesService = new InputFilesServiceImp();
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     public void should_return_each_word_in_list_by_file() throws IOException {
         try (var filesPaths = Files.list(Paths.get("src/test/resources"))) {
             Map<String, List<String>> result = inputFilesService.readFilesContent(filesPaths);
@@ -44,13 +41,6 @@ class InputFilesServiceTest {
             Assertions.assertEquals(expectedFile2Content, result.get(file2));
             Assertions.assertEquals(expectedFile3Content, result.get(file3));
         }
-    }
-
-    @org.junit.jupiter.api.Test
-    public void folder_not_exist_should_return_error() {
-        assertThrows(RuntimeException.class, () -> {
-            inputFilesService.readFilesContent(Stream.of(Paths.get("src/test/resources/non-existent-folder")));
-        });
     }
 
     @Test

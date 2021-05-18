@@ -1,6 +1,5 @@
 package com.searchengine.Commandlinedriventextsearchengine.services.imp;
 
-
 import com.searchengine.Commandlinedriventextsearchengine.model.InputFile;
 import com.searchengine.Commandlinedriventextsearchengine.services.CalculatePercentagesService;
 import com.searchengine.Commandlinedriventextsearchengine.services.RankService;

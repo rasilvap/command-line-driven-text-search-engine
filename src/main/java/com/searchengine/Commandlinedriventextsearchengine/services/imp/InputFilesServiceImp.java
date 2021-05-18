@@ -31,8 +31,7 @@ public class InputFilesServiceImp implements InputFilesService {
                                 .map(String::trim)
                                 .collect(Collectors.toList()));
             } catch (IOException e) {
-                throw new RuntimeException(e);
-                //  System.err.println("Error while loading lines from file : " + e.getMessage());
+                System.err.println("Error while loading lines from file : " + e.getMessage());
             }
         });
         return filesContent;

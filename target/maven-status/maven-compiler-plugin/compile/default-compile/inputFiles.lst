@@ -1,11 +1,12 @@
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/services/imp/InputFilesServiceImp.java
+/Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/services/ReadUserInputs.java
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/exceptions/PercentagesEngineException.java
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/services/CalculatePercentagesService.java
+/Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/services/imp/ReadUserInputsImp.java
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/exceptions/PercentagesEngineInputException.java
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/CommandLineDrivenTextSearchEngineApplication.java
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/services/imp/CalculatePercentagesServiceImp.java
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/services/imp/RankServiceImp.java
-/Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/util/ReadUserInputs.java
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/model/InputFile.java
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/services/RankService.java
 /Users/rodolfosilva/Proyectos/challengues/adevinta/from-Guhub/command-line-driven-text-search-engine/src/main/java/com/searchengine/Commandlinedriventextsearchengine/services/InputFilesService.java
