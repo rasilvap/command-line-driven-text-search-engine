@@ -3,6 +3,7 @@ package com.searchengine.Commandlinedriventextsearchengine.services.imp;
 
 import com.searchengine.Commandlinedriventextsearchengine.model.InputFile;
 import com.searchengine.Commandlinedriventextsearchengine.services.CalculatePercentagesService;
+import com.searchengine.Commandlinedriventextsearchengine.services.RankService;
 import com.searchengine.Commandlinedriventextsearchengine.util.ReadWordsService;
 import org.springframework.stereotype.Service;
 
@@ -15,9 +16,9 @@ public class CalculatePercentagesServiceImp implements CalculatePercentagesServi
 
 
     private ReadWordsService readWordsService;
-    private RankServiceImp rankService;
+    private RankService rankService;
 
-    public CalculatePercentagesServiceImp(ReadWordsService readWordsService, RankServiceImp rankService) {
+    public CalculatePercentagesServiceImp(ReadWordsService readWordsService, RankService rankService) {
         this.readWordsService = readWordsService;
         this.rankService = rankService;
     }

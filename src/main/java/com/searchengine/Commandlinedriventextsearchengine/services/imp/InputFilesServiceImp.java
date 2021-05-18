@@ -1,5 +1,6 @@
 package com.searchengine.Commandlinedriventextsearchengine.services.imp;
 
+import com.searchengine.Commandlinedriventextsearchengine.exceptions.ScoresEngineInputException;
 import com.searchengine.Commandlinedriventextsearchengine.services.InputFilesService;
 import org.springframework.stereotype.Service;
 
@@ -31,8 +32,8 @@ public class InputFilesServiceImp implements InputFilesService {
                                 .map(String::trim)
                                 .collect(Collectors.toList()));
             } catch (IOException e) {
-                //TODO: throw an exception
-                System.err.println("Error while loading lines from file : " + e.getMessage());
+                throw new RuntimeException(e);
+                //  System.err.println("Error while loading lines from file : " + e.getMessage());
             }
         });
         return filesContent;

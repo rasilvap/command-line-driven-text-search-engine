@@ -15,7 +15,9 @@
 	<description>search Engine project</description>
 	<properties>
 		<java.version>11</java.version>
+		<system-rules.version>1.19.0</system-rules.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -30,6 +32,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.stefanbirkner</groupId>
+			<artifactId>system-rules</artifactId>
+			<version>${system-rules.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
