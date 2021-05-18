@@ -1,6 +1,6 @@
 package com.searchengine.Commandlinedriventextsearchengine;
 
-import com.searchengine.Commandlinedriventextsearchengine.exceptions.ScoresEngineInputException;
+import com.searchengine.Commandlinedriventextsearchengine.exceptions.PercentagesEngineInputException;
 import com.searchengine.Commandlinedriventextsearchengine.services.CalculatePercentagesService;
 import com.searchengine.Commandlinedriventextsearchengine.services.InputFilesService;
 import org.springframework.boot.CommandLineRunner;
@@ -32,7 +32,7 @@ public class CommandLineDrivenTextSearchEngineApplication implements CommandLine
     public void run(String... args) throws Exception {
 
         if (args.length == 0) {
-            throw new ScoresEngineInputException("No directory given to index. Please type directory containing files to read.");
+            throw new PercentagesEngineInputException("No directory given to index. Please type directory containing files to read.");
         }
         try {
             var directory = args[0];

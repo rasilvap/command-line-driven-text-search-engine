@@ -1,6 +1,5 @@
 package com.searchengine.Commandlinedriventextsearchengine.services.imp;
 
-import com.searchengine.Commandlinedriventextsearchengine.exceptions.ScoresEngineInputException;
 import com.searchengine.Commandlinedriventextsearchengine.services.InputFilesService;
 import org.springframework.stereotype.Service;
 
