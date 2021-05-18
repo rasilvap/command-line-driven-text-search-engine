@@ -33,3 +33,10 @@ algorithm and the basic console functionality (you can assume that the input str
 ● It should be between 0 and 100 if it contains only some of the words, but the exact ranking
 
 formula is up to you to choose and implement
+
+## How to run the application
+
+1. In the main directory run the command ```mvn clean install```, with this command you'll generate a jar file in the ```target``` directory.
+2. You can copy this .jar file ```(command-line-driven-text-search-engine-0.0.1.jar)``` in any directory you want and you must create a folder call ```resources```.
+3. Open a terminal in the folder and execute the command: ```java -jar command-line-driven-text-search-engine-0.0.1.jar src/main/resources```.
+4. You can start searching the words you want, by writing them in the console.
