@@ -34,9 +34,15 @@ algorithm and the basic console functionality (you can assume that the input str
 
 formula is up to you to choose and implement
 
+## How to
+
+The application was built using Java11 and streams-lambda feataures, also has implemented unit test for the services classes using mockito and junit 5.
+
 ## How to run the application
 
 1. In the main directory run the command ```mvn clean install```, with this command you'll generate a jar file in the ```target``` directory.
-2. You can copy this .jar file ```(command-line-driven-text-search-engine-0.0.1.jar)``` in any directory you want and you must create a folder call ```resources```.
-3. Open a terminal in the folder and execute the command: ```java -jar command-line-driven-text-search-engine-0.0.1.jar src/main/resources```.
-4. You can start searching the words you want, by writing them in the console.
+2. You can copy and paste this .jar file ```(command-line-driven-text-search-engine-0.0.1.jar)``` in any directory you want and you must create a folder called ```resources```.
+3. Open a terminal in the folder and execute the command: ```java -jar command-line-driven-text-search-engine-0.0.1.jar resources```.
+4. You can start searching the words you want, by writing them in the console. You must see a console with the search> word, and you can start typing the words that you want to look for inside the files.
+
+
