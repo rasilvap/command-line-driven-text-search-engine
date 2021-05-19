@@ -32,20 +32,17 @@ class InputFilesServiceTest {
             Map<String, List<String>> result = inputFilesService.readFilesContent(filesPaths);
             String file1 = "file1.txt";
             String file2 = "file2.txt";
-            String file3 = "file3.txt";
-            var expectedFile1Content = Arrays.asList("the", "other", "word");
-            var expectedFile2Content = Arrays.asList("the", "amazing", "word");
-            var expectedFile3Content = Arrays.asList("The", "search", "engine", "is",  "very", "efficient");
-            Assertions.assertEquals(Set.of(file1, file2, file3), result.keySet());
+            var expectedFile1Content = Arrays.asList("this", "is", "a", "test");
+            var expectedFile2Content = Arrays.asList("the", "second", "test");
+            Assertions.assertEquals(Set.of(file1, file2), result.keySet());
             Assertions.assertEquals(expectedFile1Content, result.get(file1));
             Assertions.assertEquals(expectedFile2Content, result.get(file2));
-            Assertions.assertEquals(expectedFile3Content, result.get(file3));
         }
     }
 
     @Test
     public void should_display_number_of_files_in_direcory() throws IOException {
         String message = inputFilesService.displayFilesCount("src/test/resources", "txt");
-        Assertions.assertEquals("3 files read in directory src/test/resources", message);
+        Assertions.assertEquals("2 files read in directory src/test/resources", message);
     }
 }

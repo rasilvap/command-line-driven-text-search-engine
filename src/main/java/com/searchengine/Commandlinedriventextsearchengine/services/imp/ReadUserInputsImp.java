@@ -9,11 +9,14 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
+import static com.searchengine.Commandlinedriventextsearchengine.util.Constants.SEARCH;
+
 @Service
 public class ReadUserInputsImp implements ReadUserInputs {
+
     public List<String> readSearchedWords() {
         List<String> searchedWord = new ArrayList<>();
-        System.out.print("search>");
+        System.out.print(SEARCH);
         var scanner = new Scanner(System.in);
         var line = scanner.nextLine();
         if (line == null || line.trim().isEmpty()) {

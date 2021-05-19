@@ -13,6 +13,9 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static com.searchengine.Commandlinedriventextsearchengine.util.Constants.FILE;
+import static com.searchengine.Commandlinedriventextsearchengine.util.Constants.FILES;
+
 /**
  * Tool class manipulating files.
  */
@@ -44,9 +47,9 @@ public class InputFilesServiceImp implements InputFilesService {
                     .filter(p -> p.toString().endsWith(filesExtension))
                     .count();
         }
-        var filesText = "files";
+        var filesText = FILES;
         if (filesCount == 1) {
-            filesText = "file";
+            filesText = FILE;
         }
         String message = filesCount + " " + filesText + " read in directory " + directory;
         System.out.println(message);

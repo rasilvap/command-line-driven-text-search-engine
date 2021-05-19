@@ -10,9 +10,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 
+import static com.searchengine.Commandlinedriventextsearchengine.util.Constants.QUIT;
+
 @Service
 public class CalculatePercentagesServiceImp implements CalculatePercentagesService {
-
 
     private ReadUserInputs readUserInputs;
     private RankService rankService;
@@ -24,7 +25,7 @@ public class CalculatePercentagesServiceImp implements CalculatePercentagesServi
 
     public boolean calculatePercentages(Map<String, List<String>> filesContent) {
         var searchedWords = readUserInputs.readSearchedWords();
-        if (searchedWords.size() == 1 && searchedWords.contains("quit")) {
+        if (searchedWords.size() == 1 && searchedWords.contains(QUIT)) {
             return true;
         }
         var ranks = rankService.calculateRanks(filesContent, searchedWords);
